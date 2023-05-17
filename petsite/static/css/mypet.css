@@ -29,6 +29,10 @@ a {
     color: black;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 /* menu_list.html */
 
 .main-section {
@@ -111,6 +115,54 @@ ul li:hover {
 .message-input:focus {
     outline: none;
     border: 3px solid #00E0FF;
+}
+
+/* introduce.html */
+.introduce-section a {
+    color: #00E0FF;
+    text-decoration: underline;
+}
+
+.introduce-icon {
+    display: inline-block;
+}
+
+.introduce-icon img {
+    width: 600px;
+}
+
+.introduce-description {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    margin-left: 100px;
+}
+
+.introduce-description p {
+    margin: 0 0 10px 0;
+}
+
+.introduce-sub-title {
+    font-size: 1.8rem;
+}
+
+.introduce-text {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+}
+
+.introduce-title {
+    font-family: 'GmarketSansMedium';
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-bottom: 35px !important;
+}
+
+.introduce-circle img {
+    position: absolute;
+    width: 500px;
+    right: -200px;
+    bottom: -200px;
 }
 
 footer {
