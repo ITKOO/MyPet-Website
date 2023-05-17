@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="snack-section">
+        <p class="snack-title">
+            겨울이가 좋아하는 물품들을<br>
+            구매해 선물해보세요!
+        </p>
+        <p class="snack-sub-title">
+            (혹시 모르죠.. 냥이의 애교를 볼 수 있을지도)
+        </p>
+        {% for snack in snacks %}
+            <div class="snack-box">
+                <img src="{{ snack.img_url }}" alt="">
+                <p>{{ snack.title }} {{ snack.price }}원</p>
+            </div>
+
+
+        {% endfor %}
+    </section>
+{% endblock %}

@@ -29,6 +29,14 @@ a {
     color: black;
 }
 
+.float-right {
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 1.5rem;
+}
+
 .underline {
     text-decoration: underline;
 }
@@ -119,7 +127,7 @@ ul li:hover {
 
 /* introduce.html */
 .introduce-section a {
-    color: #00E0FF;
+    color: #05aac1;
     text-decoration: underline;
 }
 
@@ -163,6 +171,51 @@ ul li:hover {
     width: 500px;
     right: -200px;
     bottom: -200px;
+}
+
+/* gallery.html */
+.gallery-section {
+    width: 100%;
+    text-align: center;
+    padding: 80px 30px 30px 30px;
+    background-color: #F5FF00;
+}
+
+.gallery-img1 {
+    width: 300px !important;
+    height: 400px;
+    object-fit: cover;
+    border: 5px solid #00E0FF;
+}
+
+.gallery-img2 {
+    height: 500px !important;
+}
+
+/* snack_list.html */
+.snack-section {
+    width: 100%;
+    text-align: center;
+    padding: 0 30px 30px 30px;
+}
+
+.snack-box {
+    display: inline-block;
+}
+
+.snack-box {
+    margin: 0 0 10px 0;
+}
+
+.snack-title {
+    font-family: 'GmarketSansMedium';
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-bottom: 35px !important;
+}
+
+.snack-sub-title {
+    font-size: 1.8rem;
 }
 
 footer {

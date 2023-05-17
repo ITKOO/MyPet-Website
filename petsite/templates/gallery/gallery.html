@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="gallery-section">
+        {% for img in gallery %}
+            <img src="{{ img }}" class="gallery-img1">
+        {% endfor %}
+    </section>
+{% endblock %}
