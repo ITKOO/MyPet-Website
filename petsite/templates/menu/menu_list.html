@@ -3,26 +3,33 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>MyPet 구지원</title>
     <link rel="stylesheet" href="{% static 'css/mypet.css' %}">
 </head>
 <body>
-<div>
-    <img src="" alt="">
-</div>
+<section class="main-section">
+    <div class="main-icon">
+        <img src="{% static 'img/main-icon.png' %}" alt="">
+    </div>
 
-<div>
-    {% for message in messages %}
-        {{ message }}
-    {% endfor %}
+    <div class="menu-list">
+        <ul>
+            <li>introduce <b>“겨울”</b></li>
+            <li>메세지 남기기</li>
+            <li>냥갤러리</li>
+            <li>간식 사주기</li>
+        </ul>
+    </div>
 
-    <ul>
-        <li>introduce “겨울”</li>
-        <li>메세지 남기기</li>
-        <li>냥갤러리</li>
-        <li>간식 사주기</li>
-    </ul>
-</div>
+    <footer>
+        copyright ©2023 단국대 소프트웨어학과 구지원
+    </footer>
+</section>
+
+{##}
+{#{% for message in messages %}#}
+{#    {{ message }}#}
+{#{% endfor %}#}
 
 </body>
 </html>
