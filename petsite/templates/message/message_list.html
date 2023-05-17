@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="message-section">
+        <div class="mobile-view">
+            <p class="message-title"> 익명으로, 겨울이한테<br>메세지를 남겨보세요 💬</p>
+            {% for message in messages %}
+                <div class="message">{{ message }}</div>
+            {% endfor %}
+            <input class="message-input" type="text" placeholder="메세지를 입력하고 엔터를 눌러보세요!">
+        </div>
+    </section>
+{% endblock %}

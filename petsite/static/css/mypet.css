@@ -12,16 +12,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'UhBeenamsoyoung';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeenamsoyoung.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background-color: #F5FF00;
     margin: 0;
     font-family: 'GmarketSansLight';
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* menu_list.html */
 
 .main-section {
     width: 100%;
     text-align: center;
     padding: 80px 30px 30px 30px;
+    background-color: #F5FF00;
 }
 
 .main-icon {
@@ -54,6 +68,53 @@ ul li:hover {
     bottom: 75px;
 }
 
+/* message_list.html */
+
+.message-section {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+.message-title {
+    font-family: 'GmarketSansMedium';
+    font-size: 2rem;
+}
+
+.mobile-view {
+    width: 412px;
+    height: 700px;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.message {
+    font-family: 'UhBeenamsoyoung';
+    display: inline-block;
+    padding: 10px;
+    background-color: #00E0FF;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.message-input {
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-top: 40px;
+}
+
+.message-input:focus {
+    outline: none;
+    border: 3px solid #00E0FF;
+}
+
 footer {
+    width: 100%;
     margin-top: 50px;
+    text-align: center;
 }

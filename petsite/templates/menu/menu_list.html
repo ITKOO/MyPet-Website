@@ -8,19 +8,11 @@
 
         <div class="menu-list">
             <ul>
-                <li>introduce <b>“겨울”</b></li>
-                <li>메세지 남기기</li>
-                <li>냥갤러리</li>
-                <li>간식 사주기</li>
+                <li><a href="{% url 'message_list' %}">introduce <b>“겨울”</b></a></li>
+                <li><a href="{% url 'message_list' %}">메세지 남기기</a></li>
+                <li><a href="{% url 'message_list' %}">냥갤러리</a></li>
+                <li><a href="{% url 'message_list' %}">간식 사주기</a></li>
             </ul>
         </div>
-
-        <footer>
-            copyright ©2023 단국대 소프트웨어학과 구지원
-        </footer>
-        {##}
-        {#{% for message in messages %}#}
-        {#    {{ message }}#}
-        {#{% endfor %}#}
     </section>
 {% endblock %}
